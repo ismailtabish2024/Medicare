@@ -12,9 +12,7 @@ import serviceAppointmentRouter from "./routes/serviceAppointmentRouter.js";
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+
 
 const allowedOrigins = [
   // 'http://localhost:5173',
@@ -53,6 +51,11 @@ app.use("/api/service-appointments",serviceAppointmentRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
+});
+
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
 
 // app.listen(port, () => {
