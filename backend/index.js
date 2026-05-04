@@ -20,7 +20,7 @@ const allowedOrigins = [
   // 'http://localhost:5173',
   // 'http://localhost:5174',
     'https://medicare-9qea.vercel.app', // Admin 
-  'https://medicare-frontend-zeta-ten.vercel.app/' // frontend
+  'https://medicare-frontend-zeta-ten.vercel.app' // frontend
 ];
 
 app.use(cors({
