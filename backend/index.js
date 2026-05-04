@@ -10,9 +10,18 @@ import appointmentRouter from "./routes/appointmentRoutes.js";
 import serviceAppointmentRouter from "./routes/serviceAppointmentRouter.js";
 
 const app = express();
-const port =4000;
+const PORT = process.env.PORT || 4000;
 
-const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174'];
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:5174',
+  'https://your-frontend.vercel.app',
+  'https://your-admin.vercel.app'
+];
 
 app.use(cors({
   origin: function (origin, callback) {
