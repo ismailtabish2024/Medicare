@@ -253,7 +253,7 @@ const AddPage = () => {
 
       const API_BASE = "https://medicare-backend-febv.onrender.com";
 
-      const res = await fetch(`${API_BASE}/doctors`, {
+      const res = await fetch(`${API_BASE}/api/doctors`, {
         method: "POST",
         body: fd,
       });
