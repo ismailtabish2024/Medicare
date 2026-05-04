@@ -17,8 +17,8 @@ app.listen(PORT, () => {
 });
 
 const allowedOrigins = [
-  'http://localhost:5173',
-  'http://localhost:5174',
+  // 'http://localhost:5173',
+  // 'http://localhost:5174',
     'https://medicare-taupe-ten.vercel.app/',
   'https://your-admin.vercel.app'
 ];
