@@ -305,7 +305,7 @@ const ListPage = () => {
   const [error, setError] = useState(null);
   const params = useParams();
   const doctorId = params.id;
-  const API_BASE = "http://localhost:4000";
+  const API_BASE ="https://medicare-backend-febv.onrender.com";
 
   async function fetchAppointments() {
     setLoading(true);

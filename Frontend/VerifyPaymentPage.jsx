@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://medicare-backend-febv.onrender.com";
 const VerifyPaymentPage = () => {
     const location =  useLocation();
     const navigate = useNavigate();
