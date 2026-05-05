@@ -433,7 +433,7 @@ export default function EditProfilePage({ apiBase }) {
                           <div className={styles.statValue}>{doc.patients}</div>
                         ) : (
                           <input
-                            type="number"
+                            type="text"
                             min={0}
                             step={1}
                             value={doc.patients ?? ""}
@@ -461,7 +461,7 @@ export default function EditProfilePage({ apiBase }) {
                     <div className="flex flex-col">
                       <div className={styles.statLabel}>Success</div>
                       {!editing ? (
-                        <div className={styles.statValue}>{doc.success}</div>
+                        <div className={styles.statValue}>{doc.success}%</div>
                       ) : (
                         <input
                           type="number"
