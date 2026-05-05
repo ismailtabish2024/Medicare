@@ -9,6 +9,7 @@ import {
   BadgeIndianRupee,
 } from "lucide-react";
 import { dashboardStyles } from "../assets/dummyStyles";
+import doctors from "../../../../AppData/Local/Temp/8062f187-6f75-44ca-82e4-2e37068d132a_MEDICARE.zip.32a/MEDICARE/frontend/src/data/doctorsData";
 
 const API_BASE = "https://medicare-backend-febv.onrender.com";
 
@@ -341,7 +342,7 @@ export default function DashboardPage({ apiBase }) {
             </h1>
             <p className={dashboardStyles.headerSubtitle}>
               {doctorId
-                ? `Showing appointments for doctor ${doctorId}`
+                ? `Showing appointments for doctor ${doctors.name || doctorId}`
                 : "Overview of latest appointments & earnings"}
             </p>
           </div>
