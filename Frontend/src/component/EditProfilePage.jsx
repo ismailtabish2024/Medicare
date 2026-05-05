@@ -57,7 +57,7 @@ function dedupeAndSortSchedule(schedule = {}) {
 export default function EditProfilePage({ apiBase }) {
   const { id } = useParams();
   const navigate = useNavigate();
-  const API_BASE = "https://medicare-frontend-zeta-ten.vercel.app";
+  const API_BASE = "https://medicare-backend-febv.onrender.com";
 
   const [doc, setDoc] = useState(null);
   const [editing, setEditing] = useState(false);
