@@ -12,7 +12,7 @@ import { useAuth } from "@clerk/clerk-react";
 import toast, { Toaster } from "react-hot-toast";
 import { serviceDetailStyles, iconSize } from "../assets/dummyStyles";
 
-const DEFAULT_HOST = "https://medicare-frontend-zeta-ten.vercel.app".replace(/\/$/, "");
+const DEFAULT_HOST = "https://medicare-backend-febv.onrender.com".replace(/\/$/, "");
 
 export default function ServiceDetail() {
   const { id } = useParams();
